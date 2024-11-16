@@ -141,7 +141,7 @@ public class SCWrapper {
             }
         }
 
-        var _ = _serialPort.getInputStream().skip(_serialPort.bytesAvailable());
+        var test = _serialPort.getInputStream().skip(_serialPort.bytesAvailable());
 
         startTime = System.currentTimeMillis();
         _serialPort.clearDTR();
